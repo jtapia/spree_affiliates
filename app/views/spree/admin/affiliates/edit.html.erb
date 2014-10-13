@@ -1,0 +1,17 @@
+<% content_for :page_title do %>
+  <%= Spree.t(:affiliates) %> <i class="icon-arrow-right"></i>
+   <%= @affiliate.name %>
+<% end %>
+
+<% content_for :page_actions do %>
+  <li><%= link_to_with_icon 'icon-arrow-left', Spree.t(:back_to_affiliates_list), admin_affiliates_path, :class => 'button' %></li>
+<% end %>
+
+<%= render :partial => 'spree/shared/error_messages', :locals => { :target => @affiliate } %>
+
+<%= form_for [:admin, @affiliate] do |f| %>
+  <fieldset class="no-border-top">
+    <%= render :partial => 'form', :locals => { :f => f } %>
+    <%= render :partial => 'spree/admin/shared/edit_resource_links' %>
+  </fieldset>
+<% end %>

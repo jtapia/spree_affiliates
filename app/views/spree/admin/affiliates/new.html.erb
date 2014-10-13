@@ -1,0 +1,10 @@
+<%= render :partial => 'spree/admin/shared/configuration_menu' %>
+
+<h1><%= Spree.t(:new_affiliate) %></h1>
+
+<%= render :partial => 'spree/shared/error_messages', :locals => { :target => @affiliate} %>
+
+<%= form_for [:admin, @affiliate] do |affiliate_form| %>
+  <%= render :partial => 'form', :locals => { :affiliate_form => affiliate_form } %>
+  <%= render :partial => 'spree/admin/shared/new_resource_links' %>
+<% end %>
