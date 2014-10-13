@@ -1,35 +1,19 @@
 en:
+  activerecord:
+    models:
+      spree/affiliate:
+        one: Affiliate
+        other: Affiliates
+        no_resource_found: 'No %{resource} found'
   spree:
-    cookie_life_span: Cookie Life (days)
-    affiliate_settings: Affiliate Settings
-    claimable_amount: Claimable Amount
-    referal_incentive: Referal Incentive (%)
-    affiliate_desc: Affiliate configuration setup
-    referral_earnings: Earnings
-    referral_credits: Credits
-    affiliate_payment_request: Affiliate Payment Request Email
-    line_item_id: Line Item ID
-
-    my_affiliate_info: My Affiliate Info
-    user_affiliate_url: Affiliate URL
-    total_earnings: Total Earnings
-    request_payment: Redeem my balance
-    give_credit: Give credit
-
-    request_sent: Your request has been submitted.
-    pay_user: Mark user as paid
-    my_earnings: You've earned
-    payment_processed: Payment successfully created
-
     full_name: Name
+    name: Name
+    display_url: Display URL
+    link: Link
     edit_profile: Edit profile
     affiliate_url: Your affiliate link
-    affiliate_query_param: Your affiliate query parameter (append to the end of the link you provide e.g. http://mysite.com?affiliate=abcd)
     order_for: orders for
     no_name: Your Name Here
-    affiliate_earnings_details: details
     go_back: Go back
-    affiliate_setting_error: all fields are required.
-    affiliate_credit_add_error: Description and Amount are both required.
     account_updated: Account successfully updated
 

@@ -1,14 +1,23 @@
-<%= f.field_container :name do %>
-  <%= f.label :name, Spree.t(:affiliate_name) %>
-  <%= f.text_field :name %>
-<% end %>
+<div data-hook='admin_affiliates_form_fields' class='row'>
+  <div class='row'>
+    <div class='alpha five columns'>
+      <div class='field '>
+        <%= f.label :name, Spree.t(:name) %>
+        <%= f.text_field :name, class: 'fullwidth' %>
+      </div>
+    </div>
 
-<%= f.field_container :name do %>
-  <%= f.label :display_url, Spree.t(:affiliate_display_url) %>
-  <%= f.text_field :display_url %>
-<% end %>
+    <div class='five columns'>
+      <div class='field '>
+        <%= f.label :display_url, Spree.t(:display_url) %>
+        <%= f.text_field :display_url, class: 'fullwidth' %>
+    </div>
+  </div>
 
-<%= f.field_container :link do %>
-  <%= f.label :link, Spree.t(:affiliate_link) %>
-  <%= f.text_field :link %>
-<% end %>
+  <div class='omega five columns'>
+    <div class='field '>
+      <%= f.label :link, Spree.t(:link) %>
+      <%= f.text_field :link, class: 'fullwidth' %>
+    </div>
+  </div>
+</div>
